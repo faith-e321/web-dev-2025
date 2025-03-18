@@ -6,19 +6,25 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portfolio</title>
 </head>
-<body class="mx-16 my-8 break-after-auto">
+<body class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-8">
     <nav class="mb-8 flex items-center">
         <h1 class="grow text-xl font-black">Faith's Portfolio</h1>
         <ul class="flex justify-end gap-8">
-            <li><a href="">Case Study 1</a></li>
-            <li><a href="">Case Study 2</a></li>
-            <li><a href="">Case Study 3</a></li>
-            <li><a href="">About</a></li>
+            <li class="hover:underline"><a href="">Case Study 1</a></li>
+            <li class="hover:underline"><a href="">Case Study 2</a></li>
+            <li class="hover:underline"><a href="">Case Study 3</a></li>
+            <li class="hover:underline"><a href="">About</a></li>
         </ul>
     </nav> 
 
     <section class="mb-8">
-        <img class="rounded-xl" src="https://images.unsplash.com/photo-1741800459656-4116dcb230ae?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sand landscape">
+        <div class="relative">
+            <img class="rounded-xl" src="https://images.unsplash.com/photo-1741800459656-4116dcb230ae?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sand landscape">
+            <div class="absolute bottom-0 left-0 flex items-center justify-between w-full p-8">
+                <h1 class="text-white text-5xl">Welcome!</h1>
+                <a href=""><p class="rounded-full bg-slate-100 py-2 px-3 hover:bg-slate-300">Contact Me</p></a>
+            </div>
+        </div>
     </section>
 
     <div></div>
@@ -26,19 +32,19 @@
     <section class="mb-8">
         <div class="grid grid-cols-3 gap-3">
             <div class="bg-slate-100 border p-4 shadow-sm rounded-md">
-                <h4 class="italic">Item 1</h4>
+                <h4 class="italic">Case Study 1</h4>
                 <p>Here's some info about this item</p>
-                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm">Click me!</button>
+                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm hover:bg-blue-400"><a href="">Click me!</a></button>
             </div>
             <div class="bg-slate-100 border p-4 shadow-sm rounded-md">
-                <h4 class="italic">Item 2</h4>
+                <h4 class="italic">Case Study 2</h4>
                 <p>Here's some info about this item</p>
-                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm">Click me!</button>
+                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm hover:bg-blue-400"><a href="">Click me!</a></button>
             </div>
             <div class="bg-slate-100 border p-4 shadow-sm rounded-md">
-                <h4 class="italic">Item 3</h4>
+                <h4 class="italic">Case Study 3</h4>
                 <p>Here's some info about this item</p>
-                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm">Click me!</button>
+                <button class="rounded-full bg-blue-200 mt-4 p-2 justify-end text-sm hover:bg-blue-400"><a href="">Click me!</a></button>
             </div>
           </div>
     </section>
